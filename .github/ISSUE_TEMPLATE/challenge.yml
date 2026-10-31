@@ -1,0 +1,37 @@
+name: Challenge
+description: Create a new challenge or task
+title: ""
+labels: ["challenge"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Challenge Details
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Brief overview of the task
+      placeholder: Describe the goal
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: List the required outputs
+      placeholder: |
+        - Requirement 1
+        - Requirement 2
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Clear completion conditions
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+    validations:
+      required: true
